@@ -1,0 +1,23 @@
+Flutter在windows下安装体验：
+官网安装指导：https://flutter.io/setup-windows/
+1.首先windows上要安装有git环境
+2.创建一个存放Flutter源码的文件夹，不要有中文字符和空格，避免出现问题
+3.在Flutter文件夹下执行命令：git clone -b beta https://github.com/flutter/flutter.git
+4.配置环境变量：需要在Windows环境变量Path中添加flutter的路径，路径指向到Flutter文件的bin
+配置完环境变量，可以在终端直接输入flutter命令验证，没有提示该命令找不到，则配置成功
+5.命令行输入flutter doctor，安装Futter剩余依赖项。（没翻墙多次下载失败，翻墙后一次成功，看来目前需要翻墙下载）
+注意：使用git来执行flutter doctor命令无法完成安装，windows下使用cmd命令行或者Powershell工具，win10在搜索栏直接搜索Powershell就可以调出
+6.启动Android Studio，搜索Flutter插件并单击install，同时会提示安装Dart插件，点击Yes安装即可。
+提示：安装Dart插件可能会提示下载失败，多试几次
+7.安装完成后，创建Flutter项目：Android Studio - File - New - New Flutter Project
+
+
+运行Flutter程序有两种方式：
+第一种方式，如果有个Flutter程序，目录名为FlutterDemo，我们只需要在FlutterDemo目录下执行flutter run即可，当然必须通过USB连接设备才可以，这里可以选择iOS和Android手机，当然也可以选用模拟器
+第二种方式，直接在在IntelliJ或Android Studio中打开Flutter程序所在的文件夹，如FlutterDemo，然后就可以运行。我们clone的Flutter源码中有官方提供的Demo,路径位于flutter/examples/flutter_gallery目录下,我们可以运行该demo查看效果
+
+Flutter开发语言是Dart，https://www.dartlang.org/
+推荐一个flutter尝鲜demo： https://github.com/WuXiaolong/flutter_movie
+
+Flutter中文论坛：http://flutter-dev.cn/		http://flutter-dev.cn/topic/65/
+https://www.jianshu.com/p/213bfa3d40dd
